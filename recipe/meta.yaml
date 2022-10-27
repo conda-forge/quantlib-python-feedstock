@@ -22,7 +22,7 @@ requirements:
     - autoconf  # [unix]
     - automake  # [unix]
     - make  # [unix]
-    - swig <4.1
+    - swig
   host:
     - python
     - pip

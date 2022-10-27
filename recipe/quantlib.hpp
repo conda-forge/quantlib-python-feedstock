@@ -5,7 +5,6 @@
 #include <ql/version.hpp>
 #include <ql/auto_link.hpp>
 
-#include <ql/auto_ptr.hpp>
 #include <ql/cashflow.hpp>
 #include <ql/compounding.hpp>
 #include <ql/currency.hpp>

@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win and vc<14]
 
 requirements:
@@ -31,11 +31,14 @@ requirements:
 
   run:
     - python
-    - quantlib
+    - quantlib  # [not win]
+    - boost-cpp  # [win]
 
 test:
-  imports:
-    - QuantLib
+  source_files:
+    - Python/test/*
+  commands:
+    - python Python/test/QuantLibTestSuite.py
 
 about:
   home: https://github.com/lballabio/QuantLib

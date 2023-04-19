@@ -1,6 +1,6 @@
 {% set name = "QuantLib-python" %}
-{% set version = "1.29" %}
-{% set sha256 = "1671fcd0c49363e38c3a69184b6938fa0df8718489ff6b07503dc056b0e2d10a" %}
+{% set version = "1.30" %}
+{% set sha256 = "a89e2d198818f83df758ba90ccc742853a14c75afb0b109ff1746c297099bd2a" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win and vc<14]
 
 requirements:

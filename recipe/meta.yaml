@@ -11,7 +11,7 @@ source:
   sha256: 6cc5874e674697c0cf3043e744b9269c8bc1e8b521888a1c9d7a711041c7d959
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win and vc<14]
 
 requirements:
@@ -25,13 +25,12 @@ requirements:
   host:
     - python
     - pip
-    - boost-cpp
+    - libboost-devel
     - quantlib =={{ version }}
 
   run:
     - python
     - quantlib  # [not win]
-    - boost-cpp  # [win]
 
 test:
   source_files:

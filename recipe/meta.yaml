@@ -11,12 +11,13 @@ source:
   sha256: d5248ed4f50be9f1ac0bab7dd876010725a8230e94e6a7b1305623d9ee574e47
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - autoconf  # [unix]
     - automake  # [unix]

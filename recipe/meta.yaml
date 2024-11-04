@@ -27,6 +27,7 @@ requirements:
     - python
     - pip
     - libboost-devel
+    - setuptools
     - quantlib =={{ version }}
 
   run:

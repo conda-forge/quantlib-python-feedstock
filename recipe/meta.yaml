@@ -6,9 +6,10 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/lballabio/QuantLib-SWIG/releases/download/v{{ version }}/QuantLib-SWIG-{{ version }}.tar.gz
   sha256: 8b0d5536701ff1b5752d635c7610e639f4a52de99cd9d91aa01cf9073d80953e
+  patches:
+    - no-isolation.diff
 
 build:
   number: 1

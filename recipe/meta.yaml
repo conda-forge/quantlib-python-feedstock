@@ -31,8 +31,7 @@ requirements:
     - setuptools
     - python-build
     - quantlib =={{ version }}
-    - tox
-
+    - pytest
   run:
     - python
     - quantlib  # [not win]

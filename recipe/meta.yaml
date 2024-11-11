@@ -31,6 +31,7 @@ requirements:
     - setuptools
     - python-build
     - quantlib =={{ version }}
+    - tox
 
   run:
     - python

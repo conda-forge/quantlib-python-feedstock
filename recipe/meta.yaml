@@ -37,10 +37,12 @@ requirements:
     - quantlib  # [not win]
 
 test:
+  requires:
+    - pytest
   source_files:
     - Python/test/*
   commands:
-    - python Python/test/QuantLibTestSuite.py
+    - pytest Python/test/
 
 about:
   home: https://github.com/lballabio/QuantLib

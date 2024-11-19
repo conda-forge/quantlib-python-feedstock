@@ -12,7 +12,7 @@ source:
     - no-isolation.diff
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win and vc<14]
 
 requirements:

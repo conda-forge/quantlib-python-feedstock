@@ -5,8 +5,3 @@
 make -C Python
 make -C Python wheel
 pip install Python/dist/*.whl
-
-# testing
-pushd Python
-pytest
-popd

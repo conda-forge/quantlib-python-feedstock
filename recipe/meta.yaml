@@ -1,5 +1,5 @@
 {% set name = "QuantLib-python" %}
-{% set version = "1.41" %}
+{% set version = "1.42.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lballabio/QuantLib-SWIG/releases/download/v{{ version }}/QuantLib-SWIG-{{ version }}.tar.gz
-  sha256: fa31023207937616ca0f880eda774b6a2273ba6274e776ee9bf631ddc6bf54b8
+  sha256: 41bdd61d072b291e13b350fd618d63f178384a204ba088a867422247f4d3904d
   patches:
     - no-isolation.diff
 

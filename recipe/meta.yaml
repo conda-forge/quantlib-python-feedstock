@@ -3,7 +3,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/lballabio/QuantLib-SWIG/releases/download/v{{ version }}/QuantLib-SWIG-{{ version }}.tar.gz

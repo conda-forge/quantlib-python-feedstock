@@ -15,24 +15,23 @@ source:
     - no-isolation.diff
 
 build:
-  number: 2
+  number: 3
   skip: win and vc<14
 
 requirements:
   build:
     - if: build_platform != target_platform
-      then: python
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }}
+      then:
+        - python
+        - cross-python_${{ target_platform }}
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - ${{ compiler('cxx') }}
     - if: unix
-      then: autoconf
-    - if: unix
-      then: automake
-    - if: unix
-      then: make
+      then:
+        - autoconf
+        - automake
+        - make
     - swig
   host:
     - python

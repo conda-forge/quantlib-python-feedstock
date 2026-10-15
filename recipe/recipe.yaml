@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: QuantLib-python
-  version: "1.43"
+  version: "1.44"
 
 package:
   name: ${{ name|lower }}
@@ -10,12 +10,12 @@ package:
 
 source:
   url: https://github.com/lballabio/QuantLib-SWIG/releases/download/v${{ version }}/QuantLib-SWIG-${{ version }}.tar.gz
-  sha256: 3bc45bc596bf5fd123a3ca5d3bad9439ab6a052bc278a24398a10c0053f84998
+  sha256: 2c9bcae42b560bf6798c55d6c27bd79077a889eb6c07463f539d4a6b960d96e0
   patches:
     - no-isolation.diff
 
 build:
-  number: 3
+  number: 0
   skip: win and vc<14
 
 requirements:
